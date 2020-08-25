@@ -6,9 +6,9 @@ pipeline{
           echo 'Build Stage'
           }
       }
-      stage('test'){
+      stage('clean'){
           steps{
-          bat 'mvn -f path/to/pom.xml mvn test'
+          bat 'mvn clean'
           }
       }
     }
