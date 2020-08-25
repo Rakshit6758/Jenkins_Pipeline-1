@@ -11,15 +11,5 @@ pipeline{
           echo 'mvn clean'
           }
       }
-        stage('test'){
-          steps{
-          echo 'mvn test'
-          }
-      }
-        stage('test'){
-          steps{
-          bat 'mvn clean'
-          }
-      }
     }
 }
